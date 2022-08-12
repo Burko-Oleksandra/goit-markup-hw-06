@@ -57,6 +57,56 @@
           </div>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
+              <div class="modal-form">
+                <h2 class="title">Залиште свої дані, ми вам передзвонимо</h2>
+                <form>
+                  <label for="name">Ім'я</label>
+                  <div class="form-list">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder=" "
+                      id="name"
+                      class="modal-list"
+                    /><svg width="18px" height="18px" class="modal-icon">
+                      <use href="./images/icons.svg#person-black"></use>
+                    </svg>
+                  </div>
+                  <label for="tel">Телефон</label>
+                  <div class="form-list">
+                    <input type="tel" name="tel" placeholder=" " id="tel" class="modal-list" />
+                    <svg width="18px" height="18px" class="modal-icon">
+                      <use href="./images/icons.svg#phone-black"></use>
+                    </svg>
+                  </div>
+                  <label for="email">Пошта</label>
+                  <div class="form-list">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder=" "
+                      id="email"
+                      class="modal-list"
+                    /><svg width="18px" height="18px" class="modal-icon">
+                      <use href="./images/icons.svg#email-black"></use>
+                    </svg>
+                  </div>
+                  <label
+                    >Коментар<textarea
+                      name="feedback"
+                      placeholder="Введіть текст"
+                      class="modal-list comment"
+                    ></textarea>
+                  </label>
+                  <div class="checkbox">
+                    <input type="checkbox" name="agree" id="checkbox" class="checkbox-list" />
+                    <label for="checkbox" class="checkbox-text"
+                      >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
+                    >
+                  </div>
+                  <button type="submit" class="main-button">Відправити</button>
+                </form>
+              </div>
               <div>
                 <button data-modal-close type="button" class="icon-close">
                   <svg width="11px" height="11px">
@@ -442,6 +492,20 @@
               </li>
             </ul>
           </div>
+        </div>
+        <div class="footer-form">
+          <h2 class="footer-title">Підпишіться на розсилку</h2>
+          <form>
+            <label>
+              <input type="email" name="email" placeholder="E-mail" class="footer-email" />
+            </label>
+            <button type="submit" class="main-button footer">
+              <p>Підписатися</p>
+              <svg width="24" height="24" class="send">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

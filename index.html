@@ -62,32 +62,28 @@
                 <form>
                   <label for="name">Ім'я</label>
                   <div class="form-list">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder=" "
-                      id="name"
-                      class="modal-list"
-                    /><svg width="18px" height="18px" class="modal-icon">
+                    <input type="text" name="name" id="name" class="form-input" /><svg
+                      width="18px"
+                      height="18px"
+                      class="modal-icon"
+                    >
                       <use href="./images/icons.svg#person-black"></use>
                     </svg>
                   </div>
                   <label for="tel">Телефон</label>
                   <div class="form-list">
-                    <input type="tel" name="tel" placeholder=" " id="tel" class="modal-list" />
+                    <input type="tel" name="tel" id="tel" class="form-input" />
                     <svg width="18px" height="18px" class="modal-icon">
                       <use href="./images/icons.svg#phone-black"></use>
                     </svg>
                   </div>
                   <label for="email">Пошта</label>
                   <div class="form-list">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder=" "
-                      id="email"
-                      class="modal-list"
-                    /><svg width="18px" height="18px" class="modal-icon">
+                    <input type="email" name="email" id="email" class="form-input" /><svg
+                      width="18px"
+                      height="18px"
+                      class="modal-icon"
+                    >
                       <use href="./images/icons.svg#email-black"></use>
                     </svg>
                   </div>
@@ -95,15 +91,17 @@
                     >Коментар<textarea
                       name="feedback"
                       placeholder="Введіть текст"
-                      class="modal-list comment"
+                      class="form-input comment"
                     ></textarea>
                   </label>
-                  <div class="checkbox">
-                    <input type="checkbox" name="agree" id="checkbox" class="checkbox-list" />
-                    <label for="checkbox" class="checkbox-text"
-                      >Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label
-                    >
-                  </div>
+                  <label class="checkbox-text">
+                    <div class="checkbox">
+                      <input type="checkbox" name="agree" class="checkbox-list" /><span
+                        class="icon-agree"
+                      ></span
+                      ><span>Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></span>
+                    </div>
+                  </label>
                   <button type="submit" class="main-button">Відправити</button>
                 </form>
               </div>

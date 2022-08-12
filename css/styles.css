@@ -297,6 +297,7 @@ header {
   width: 448px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  outline: 1px;
   outline-color: rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
@@ -396,14 +397,16 @@ header {
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: var(--background-color);
+  outline-color: rgba(0, 0, 0, 0.1);
   fill: currentColor;
   border-radius: 50%;
-  transition: color 250ms var(--timing-function);
+  transition: color 250ms var(--timing-function), outline-color 250ms var(--timing-function);
 }
 
 .icon-close:hover,
 .icon-close:focus {
   color: var(--accent-color);
+  outline-color: var(--accent-color);
 }
 
 .peculiarities-button {
@@ -652,7 +655,7 @@ header {
   height: 44px;
   color: var(--icon-color);
   border-radius: 50%;
-  transition-property: background-color, color;
+  transition-property: background-color color;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
@@ -833,10 +836,6 @@ address a:focus {
   margin-left: 93px;
 }
 
-.footer-form label {
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .footer-email {
   width: 358px;
   height: 50px;
@@ -844,12 +843,19 @@ address a:focus {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: var(--footer-background-color);
+  outline-color: var(--background-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--background-color);
   /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15)); */
+}
+
+.footer-email input:hover,
+.footer-email input:focus {
+  outline: 1px;
+  outline-color: var(--background-color);
 }
 
 .footer-form form {
@@ -871,12 +877,11 @@ address a:focus {
 }
 
 .checkbox-list {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-
   position: absolute;
-
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
   display: block;
 }
 

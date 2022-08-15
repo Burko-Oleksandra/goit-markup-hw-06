@@ -707,6 +707,7 @@ header {
 }
 
 .logo-secondary {
+  display: block;
   color: var(--background-color);
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -719,6 +720,10 @@ header {
 .logo-secondary:hover,
 .logo-secondary:focus {
   color: var(--accent-color);
+}
+
+.adress-list .address-item + .address-item {
+  margin-top: 9px;
 }
 
 .link-map {

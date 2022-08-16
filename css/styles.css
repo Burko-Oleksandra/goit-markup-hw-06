@@ -746,16 +746,6 @@ header {
   margin-bottom: auto;
 
   fill: currentColor;
-
-  transition-property: background-color color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--timing-function);
-}
-
-.icon:hover,
-.icon:focus {
-  fill: var(--background-color);
-  background-color: var(--accent-color);
 }
 
 .footer-form {
@@ -1080,7 +1070,8 @@ address a:focus {
   transition: transform 250ms var(--timing-function);
 }
 
-.work-list .item:hover .text-overlay {
+.work-list .item:hover .text-overlay,
+.work-list .link:focus .text-overlay {
   transform: translateY(0);
 }
 

@@ -146,6 +146,8 @@ header {
   border-radius: 2px;
 
   background: #2196f3;
+
+  transform: translateY(1px);
 }
 
 .auth-nav {
@@ -182,6 +184,13 @@ header {
   margin-right: 10px;
 
   fill: currentColor;
+
+  transition: fill 250ms var(--timing-function);
+}
+
+.icon-nav:hover,
+.icon-nav:focus {
+  fill: var(--accent-color);
 }
 
 /* Main */
@@ -312,8 +321,8 @@ header {
   z-index: 3;
   opacity: 1;
 
-  width: 528px;
-  height: 581px;
+  max-width: 528px;
+  max-height: 581px;
 
   border-radius: 4px;
 
@@ -612,6 +621,10 @@ header {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
+.activity-title .title {
+  margin-bottom: 0;
+}
+
 .activity-list .title {
   color: var(--background-color);
 }
@@ -733,6 +746,16 @@ header {
   margin-bottom: auto;
 
   fill: currentColor;
+
+  transition-property: background-color color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--timing-function);
+}
+
+.icon:hover,
+.icon:focus {
+  fill: var(--background-color);
+  background-color: var(--accent-color);
 }
 
 .footer-form {
